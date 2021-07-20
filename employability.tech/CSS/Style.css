@@ -61,7 +61,7 @@ img {
 .hero {
     width: 100%;
     height: 80vh;
-    background-image: url(/IMG/hero.svg);
+    background-image: url(/employability.tech/IMG/hero.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -189,35 +189,56 @@ img {
 .section-what {
     height: 80vh;
     background-color: #EDEDED;
-    padding: 50px 80px;
+    padding: 70px 80px;
     font-family: 'Raleway', sans-serif;
+}
+
+.what-top {
+    display: flex;
+    width: 100%;
+    margin: auto;
 }
 
 .what-left {
     border: 1px solid red;
-    padding: 0px 0px;
-    width: 60%;
+    height: 300px;
+    width: 600px;
 }
 
-.what-left h1 {
-    border: 1px solid green;
-    border-bottom: 5px solid #E6EA30;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    font-size: 32px;
+.what-right {
+    border: 1px solid red;
+    height: 300px;
+    width: 600px;
 }
 
-.what-left h2 {
-    border: 1px solid green;
-    border-bottom: 5px solid #E6EA30;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    font-size: 25px;
+.what-bottom {
+    border: 1px solid red;
+    height: 100px;
+    width: 1189px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.what-left p {
-    text-align: right;
-    padding: 20px 10px;
+.card-logo {
+    border: 1px solid red;
+    height: 100px;
+    width: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Journey Section */
+.section-journey {
+    height: 100vh;
+    background-color: #E0E0E0;
+    padding: 70px 80px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
 }
