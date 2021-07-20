@@ -52,6 +52,11 @@ img {
     padding: 20px 0; /* Center logo */
 }
 
+
+
+
+
+
 /* Hero */
 .hero {
     width: 100%;
@@ -105,31 +110,114 @@ img {
 }
 
 
-/* Who We Are */
+
+
+
+
+
+
+
+
+/* Who We Are Section*/
 .section-who {
-    height: 50vh;
+    height: 60vh;
     background-color: #E0E0E0;
-    padding: 100px;
+    padding: 50px 80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Background Square */
+.bg-block-top {
+    position: relative;
+    top: -220px;
+    left: -300px;
+    opacity: 50%;
+    background: #a5a5a5;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.bg-block-bottom {
+    position: relative;
+    top: -180px;
+    left: -300px;
+    opacity: 50%;
+    background: #C4C4C4;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
 }
 
 .who-container {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .who-left {
-    border: 1px solid green;
-    padding: 30px;
-    font-size: 30px;
-    font-weight: bold;
+    padding: 130px 50px;
+    font-size: 22px;
+    text-align: right;
+    width: 40%;
 }
 .who-left h1 {
-    padding: 20px;
+    border-bottom: 5px solid #fff;
 }
 
 .who-right {
-    border: 1px solid blue;
-    padding: 50px;
+    border-left: 5px solid #fff;
+    padding: 100px 50px;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.who-right span {
+    line-height: 5;
+}
+
+
+
+
+
+
+
+
+
+
+/* What We Do Section */
+.section-what {
+    height: 80vh;
+    background-color: #EDEDED;
+    padding: 50px 80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.what-left {
+    border: 1px solid red;
+    padding: 0px 0px;
+    width: 60%;
+}
+
+.what-left h1 {
+    border: 1px solid green;
+    border-bottom: 5px solid #E6EA30;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+.what-left h2 {
+    border: 1px solid green;
+    border-bottom: 5px solid #E6EA30;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.what-left p {
+    text-align: right;
+    padding: 20px 10px;
 }
