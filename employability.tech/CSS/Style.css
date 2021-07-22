@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color-1: #E0E0E0;
+    --bg-color-2: #F2F2F2;
+    --highlight-color-1: #0060FE;
+    --highlight-color-2: #FF0000;
+}
+
 body,
 h1,
 h2,
@@ -24,7 +31,7 @@ img {
     display: flex; /* Display unordered lists next to another */
     justify-content: space-between; /* Places items as far apart from eachother */
     font-family: 'Raleway', sans-serif; /* Change font to 'Raleway' */
-    border-bottom: 4px solid #F2F2F2;
+    border-bottom: 4px solid var(--bg-color-2);
     padding: 10px 50px;
 }
 
@@ -83,7 +90,7 @@ img {
 .hero .ulone {
     width: 500px;
     height: 4px;
-    background-color: #0060FE;
+    background-color: var(--highlight-color-1);
     position: relative;
     top: -65px;
 }
@@ -91,7 +98,7 @@ img {
 .hero .ultwo {
     width: 150px;
     height: 4px;
-    background-color: #0060FE;
+    background-color: var(--highlight-color-1);
     position: relative;
     top: -12px;
     left: -50px;
@@ -102,7 +109,7 @@ img {
     padding: 5px 25px;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
-    background-color: red;
+    background-color: var(--highlight-color-2);
     color: #fff;
     border: none;
     position: relative;
@@ -121,7 +128,7 @@ img {
 /* Who We Are Section*/
 .section-who {
     height: 60vh;
-    background-color: #E0E0E0;
+    background-color: var(--bg-color-1);
     padding: 50px 80px;
     font-family: 'Raleway', sans-serif;
 }
@@ -200,19 +207,19 @@ img {
 }
 
 .what-left {
-    border: 1px solid red;
+    border: 1px solid #FF0000;
     height: 300px;
     width: 600px;
 }
 
 .what-right {
-    border: 1px solid red;
+    border: 1px solid #FF0000;
     height: 300px;
     width: 600px;
 }
 
 .what-bottom {
-    border: 1px solid red;
+    border: 1px solid #FF0000;
     height: 100px;
     width: 1189px;
     display: flex;
@@ -220,7 +227,7 @@ img {
 }
 
 .card-logo {
-    border: 1px solid red;
+    border: 1px solid #FF0000;
     height: 100px;
     width: 160px;
 }
@@ -237,7 +244,7 @@ img {
 /* Journey Section */
 .section-journey {
     height: 100vh;
-    background-color: #E0E0E0;
+    background-color: var(--bg-color-1);
     padding: 70px 80px;
     font-family: 'Raleway', sans-serif;
     display: flex;
