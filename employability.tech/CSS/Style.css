@@ -133,8 +133,8 @@ img {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Background Square */
-.bg-block-top {
+/* Background Squares */
+.bg-block-first {
     position: relative;
     top: -220px;
     left: -300px;
@@ -145,7 +145,7 @@ img {
     border-radius: 50px;
 }
 
-.bg-block-bottom {
+.bg-block-second {
     position: relative;
     top: -180px;
     left: -300px;
@@ -243,9 +243,271 @@ img {
 
 /* Journey Section */
 .section-journey {
-    height: 100vh;
+    height: 130vh; /* Full screen height */
     background-color: var(--bg-color-1);
-    padding: 70px 80px;
+    padding: 152px 80px;
     font-family: 'Raleway', sans-serif;
     display: flex;
+}
+
+
+
+
+.journey-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/*IMG SECTION*/
+.journey-img-sect {
+    height: 100%;
+    width: 30%;
+    padding: 140px 30px;
+}
+
+.horizontal-stripe-one {
+    height: 200px;
+    width: 3px;
+    background: yellow;
+    position: relative;
+    top: -400px;
+    left: 80px;
+}
+.horizontal-stripe-two {
+    height: 200px;
+    width: 3px;
+    background: yellow;
+    position: relative;
+    top: -360px;
+    left: 30px;
+}
+.horizontal-stripe-three {
+    height: 200px;
+    width: 3px;
+    background: yellow;
+    position: relative;
+    top: -440px;
+    left: 120px;
+}
+
+
+/*INFO SECTION*/
+.journey-info-sect {
+    height: 100%;
+    width: 40%;
+}
+
+.info-top h1 {
+    border-bottom: 3px solid yellow;
+    width:fit-content;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.info-icon {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.info-icon i {
+    font-size: 40px
+}
+
+.info-icon .fa-user-friends {
+    padding: 0 5px;
+    border-bottom: 3px solid yellow;
+}
+
+.info-text {
+    padding: 74px 50px;
+    font-size: 14px;
+}
+
+
+
+
+
+/*TIMELINE SECTION*/
+.journey-timeline-sect {
+    height: 100%;
+    width: 30%;
+}
+
+.timeline {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+.timeline .proceeding-stripe-right {
+    height: 100%;
+    width: 3px;
+    background: yellow;
+    position: relative;
+    left: 120px;
+}
+
+.timeline .week-one-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -565px;
+    left: 23px
+}
+
+.timeline .week-one-stripe h3 {
+    position: relative;
+    top: -12px;
+    left: -80px;
+}
+
+.timeline .week-one-stripe img {
+    width: 20px;
+    position: relative;
+    top: -30px;
+}
+
+.timeline .week-two-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -490px;
+    left: 23px;
+}
+
+.timeline .week-two-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-three-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -410px;
+    left: 23px;
+}
+
+.timeline .week-three-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-four-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -330px;
+    left: 23px;
+}
+
+.timeline .week-four-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-five-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -250px;
+    left: 23px;
+}
+
+.timeline .week-five-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-six-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -170px;
+    left: 23px;
+}
+
+.timeline .week-six-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-seven-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -90px;
+    left: 23px;
+}
+
+.timeline .week-seven-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+.timeline .week-eight-stripe {
+    height: 3px;
+    width: 100px;
+    background: yellow;
+    position: relative;
+    top: -25px;
+    left: 23px;
+}
+
+.timeline .week-eight-stripe img {
+    width: 20px;
+    position: relative;
+    top: -8px;
+}
+
+/* Timeline Background Squares */
+.bg-block-third {
+    position: relative;
+    top: -760px;
+    left: 260px;
+    opacity: 50%;
+    background: #a5a5a5;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.bg-block-fourth {
+    position: relative;
+    top: -720px;
+    left: 260px;
+    opacity: 50%;
+    background: #a5a5a5;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.bg-block-fifth {
+    position: relative;
+    top: -680px;
+    left: 260px;
+    opacity: 50%;
+    background: #a5a5a5;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
 }
