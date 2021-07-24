@@ -8,7 +8,7 @@
 
 :root {
     --bg-color-1: #E0E0E0;
-    --bg-color-2: #F2F2F2;
+    --bg-color-2: #EDEDED;
     --highlight-color-1: #0060FE;
     --highlight-color-2: #FF0000;
 }
@@ -20,6 +20,7 @@ h3,
 p {
     margin: 0; /* Remove all margin */
     padding: 0; /* Remove all padding */
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
@@ -207,19 +208,19 @@ img {
 }
 
 .what-left {
-    border: 1px solid #FF0000;
+    border: 1px solid var(--highlight-color-2);
     height: 300px;
     width: 600px;
 }
 
 .what-right {
-    border: 1px solid #FF0000;
+    border: 1px solid var(--highlight-color-2);
     height: 300px;
     width: 600px;
 }
 
 .what-bottom {
-    border: 1px solid #FF0000;
+    border: 1px solid var(--highlight-color-2);
     height: 100px;
     width: 1189px;
     display: flex;
@@ -227,7 +228,7 @@ img {
 }
 
 .card-logo {
-    border: 1px solid #FF0000;
+    border: 1px solid var(--highlight-color-2);
     height: 100px;
     width: 160px;
 }
@@ -245,20 +246,130 @@ img {
 .section-journey {
     width: 100%;
     background-color: var(--bg-color-1);
+    padding: 10vh;
+}
+
+.section-journey h2 {
+    text-align: center;
+
 }
 
 .journey-container {
+    max-width: 70vw;
+    margin: 0 auto;
     padding: 70px 80px;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    position: relative;
 }
 
-.journey-container div {
-    flex-basis: calc(100%/3);
+.journey-container > div {
+    flex-basis: 50%;
 }
 
-.section-journey h2 {
-    text-align: center;
+.journey-img-sect {
+    padding: 0 5vw;
+}
+
+#journey-img {
+    border: 10px solid var(--bg-color-2);
+}
+
+.journey-line {
+    background-color: var(--highlight-color-1);
+    width: 5px;
+    position: absolute;
+}
+
+.journey-line:nth-of-type(1) {
+    top: 12vmax;
+    transform: translateX(3vmax);
+    height: 12vmax;
+}
+
+.journey-line:nth-of-type(2) {
+    top: -3vmax;
+    transform: translateX(6vmax);
+    height: 10vmax;
+}
+
+.journey-line:nth-of-type(3) {
+    top: 16vmax;
+    transform: translateX(9vmax);
+    height: 6vmax;
+}
+
+.journey-info-sect {
+    display: flex;
+}
+
+.journey-info-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+}
+
+.journey-info-text-container i {
+    font-size: 60px;
+}
+
+.journey-info-text-container p {
+    text-align: left;
+    margin: 2vh 0;
+}
+
+#journey-info-next, #journey-info-previous {
+    color: white;
+    font-size: 100px;
+}
+
+.journey-timeline-sect {
+    position: relative;
+}
+
+.journey-timeline-sect .line, .timeline-dots .dot {
+    background-color: var(--highlight-color-1);
+}
+
+.timeline-dots .active .dot {
+    background-color: white;
+    border: 2px solid var(--highlight-color-1);
+}
+
+.journey-timeline-sect .line {
+    width: 5px;
+    height: 100%;
+    position: absolute; /*allows dots to overlap line*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-dots {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-dots p {
+    position: absolute;
+    transform: translateX(-70px);
+    white-space: nowrap;
+    display: none;
+}
+
+.timeline-dots .active p {
+    display: block;
+}
+
+.journey-timeline-sect .dot {
+    position: relative; /*to allow z-index to work as line class has position: absolute set*/
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
 }
