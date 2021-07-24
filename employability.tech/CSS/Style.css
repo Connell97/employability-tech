@@ -243,9 +243,22 @@ img {
 
 /* Journey Section */
 .section-journey {
-    height: 100vh;
+    width: 100%;
     background-color: var(--bg-color-1);
+}
+
+.journey-container {
     padding: 70px 80px;
     font-family: 'Raleway', sans-serif;
     display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.journey-container div {
+    flex-basis: calc(100%/3);
+}
+
+.section-journey h2 {
+    text-align: center;
 }
