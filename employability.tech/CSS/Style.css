@@ -342,6 +342,7 @@ img {
 #journey-info-next, #journey-info-previous {
     color: white;
     font-size: 100px;
+    cursor: pointer;
 }
 
 .journey-timeline-sect {
@@ -371,6 +372,10 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.timeline-dots div {
+    transition: all 0.2s;
 }
 
 .timeline-dots p {
